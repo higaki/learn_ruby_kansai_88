@@ -6,7 +6,7 @@ module RubyKansai
       if size <= 3
         nil
       else
-        [*0...size][1..-2].each_slice(2) do |i, j|
+        [*0...size][1...-1].each_slice(2) do |i, j|
           self[i], self[j] = self[j], self[i] if j
         end
         self
@@ -35,6 +35,5 @@ if __FILE__ == $0
 
   puts text.strip.split(/\s+/).map{|i| i.cambridge}.join(' ')
 end
-
 
 # >> こにんちは みさなん おんげき ですか ? わしたは げんき です 。 この ぶしんょう は イリギス の ケブンッリジ だがいく の けきんゅう の けっか にげんん は もじ を にしんき する とき その さしいょ と さいご の もさじえ あてっれいば じんゅばん は めゃちちくゃ でも ちんゃと よめる と いう けきんゅう に もづといて わざと もじの じんゅばん を いかれえて あまりす 。 どでうす ? ちんゃと よちめゃう でしょ ? ちんゃと よためら はのんう よしろく
