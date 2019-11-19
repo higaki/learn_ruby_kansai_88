@@ -1,6 +1,8 @@
 # Ruby初級者向けレッスン 72回
 ## 文字列
 
+[スライド](https://github.com/higaki/learn_ruby_kansai_88/blob/master/print.pdf)
+
 ### 演習問題 1
 1. 文字列の「行数」を数えてみよう。
 1. 文字列の「単語数」を数えてみよう。
